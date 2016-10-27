@@ -1,6 +1,6 @@
 #ifndef TARJETASORPRESA_H
 #define TARJETASORPRESA_H
-
+#include "Casilla.h"
 
 class TarjetaSorpresa {
 private:

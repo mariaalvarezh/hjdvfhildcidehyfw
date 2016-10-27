@@ -6,14 +6,13 @@ class Nodo {
 private:
 	Nodo * sgtNodo;
 	TarjetaSorpresa * dato;
-
 public:
-	Nodo(Estudiante*,Nodo*);
+	Nodo(TarjetaSorpresa*,Nodo*);
 	void setDato(TarjetaSorpresa*);
 	TarjetaSorpresa * getDato( );
 	void setSgtNodo(Nodo*);
 	Nodo * getSgtNodo( );
-	string toString( )
+	string toString( );
 	~Nodo();
 };
 

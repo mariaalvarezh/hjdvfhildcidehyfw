@@ -20,24 +20,24 @@ float Jugador:: getCapital(){
 int Jugador::LanzarDado(Dado *m) {
 	return m->Lanza();
 }
-void Jugador::ComprarSolar(Coleccion  *colecc1,TituloPropiedad *m1){
-	int costo= m1->getCasillaProp()->getPrecio();
-	colecc1->Insertar(m1);
+void Jugador::ComprarSolar(TarjetaPropiedad *m1){
+	int costo= m1->getPrecio();
+	tarjetas->Insertar(m1);
 	capital=capital-costo;
 }
-void Jugador:: ComprarCasas(TituloPropiedad *m1){
-	int costo=(m1->getCasillaProp());
+void Jugador:: ComprarCasas(TarjetaPropiedad *m1){
+	int costo=m1->getPrecio();;
 }
-void Jugador:: VenderPropiedades(TituloPropiedad *m1){
-	float costo=(m1->getCasillaProp()->getPrecio())-(m1->getCasillaProp()->getPrecio()*0.25);
+void Jugador:: VenderPropiedades(TarjetaPropiedad *m1){
+	float costo=(m1->getPrecio())-(m1->getPrecio()*0.25);
 	capital= capital+costo;
 }
-void Jugador::Hipotecar(TituloPropiedad* titul, Propiedad*x){
-	float total= titul->getCasillaProp()->getValHip();
+void Jugador::Hipotecar(TarjetaPropiedad* titul){
+	float total= titul->getValHip();
 	capital= capital+total;
 }
-void Jugador::Deshipotecar(TituloPropiedad* titul, Propiedad*x){
-	float total=(titul->getCasillaProp()->getValHip())+(titul->getCasillaProp()->getValHip()*0.20);
+void Jugador::Deshipotecar(TarjetaPropiedad* titul){
+	float total=(titul->getValHip())+(titul->getValHip()*0.20);
 	capital=capital-total;
 }
 string Jugador::toString(){

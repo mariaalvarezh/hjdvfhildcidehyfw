@@ -1,8 +1,13 @@
 #ifndef JUGADOR_H
 #define JUGADOR_H
 #include "Dado.h"
+#include "TarjetaPropiedad.h"
 #include "ColeccionPropJug.h"
+#include "Casilla.h"
+using namespace std;
 
+class TarjetaPropiedad;
+class ColeccionPropJug;
 class Jugador {
 private:
 	ColeccionPropJug* tarjetas;
@@ -18,12 +23,12 @@ public:
 	char getCaracter();
 	float getCapital();
 	int LanzarDado(Dado *m);
-	void ComprarSolar(ColeccionPropJug *colecc1,TituloPropiedad  *m1);
+	void ComprarSolar(TarjetaPropiedad  *m1);
 	void Pagar();
-	void ComprarCasas(TituloPropiedad *m1);
-	void Hipotecar(TituloPropiedad* titul, Propiedad*x);
-	void VenderPropiedades(TituloPropiedad *m1);
-	void Deshipotecar(TituloPropiedad* titul);
+	void ComprarCasas(TarjetaPropiedad *m1);
+	void Hipotecar(TarjetaPropiedad* titul);
+	void VenderPropiedades(TarjetaPropiedad *m1);
+	void Deshipotecar(TarjetaPropiedad* titul);
 	string toString();
 	~Jugador();
 };

@@ -1,6 +1,6 @@
 #include "CasillaVC.h"
 
-CasillaVC::CasillaVC(string nombre) {
+CasillaVC::CasillaVC(string nombre):Casilla() {
 	this->nombre = nombre;
 }
 

@@ -1,6 +1,6 @@
 #include "Estacion.h"
 
-Estacion::Estacion(Ficha* fichTituloPropiedad* tit, string nom, int valHip):Propiedad(fich, tit, nom, valHip, 5) {
+Estacion::Estacion(string nom, int valHip, int prec):TarjetaPropiedad(nom, valHip, prec, 5) {
 	
 }
 

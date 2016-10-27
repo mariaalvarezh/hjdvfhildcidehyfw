@@ -3,6 +3,8 @@
 #include "Jugador.h"
 #include "Casilla.h"
 
+class Jugador;
+class Casilla;
 class Ficha {
 private:
 	Jugador * jug;
@@ -11,7 +13,7 @@ private:
 public:
 	Ficha(Jugador*jug1 ,Casilla* cas1, char pCaracter);
 	Jugador * getJug();
-	Casilla* getCas;
+	Casilla* getCas();
 	void setCas(Casilla* cas1);
 	void setCaracter(char pCaracter);
 	char getCaracter();

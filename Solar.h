@@ -1,10 +1,10 @@
 #ifndef SOLAR_H
 #define SOLAR_H
 #include "Casilla.h"
-#include "Propiedad.h"
+#include "TarjetaPropiedad.h"
 
 
-class Solar:public Casilla {
+class Solar:public TarjetaPropiedad {
 private:
 	int cantCasasHotel;
 	int cobroBase;
@@ -16,7 +16,7 @@ private:
 	int costoXCasa;
 	int costoXHotel;
 public:
-	Solar(Ficha* fich, TituloPropiedad* tit, string nom, int valHip, int grup, int cobBas, int cob1, int cob2, int cob3, int cob4, int cobHot, int cosCas, int cosHot);
+	Solar(string nom, int valHip, int prec, int grup, int cobBas, int cob1, int cob2, int cob3, int cob4, int cobHot, int cosCas, int cosHot);
 	~Solar();
 	int calculoCobro();
 };

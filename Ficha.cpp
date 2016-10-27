@@ -12,7 +12,7 @@ Jugador*Ficha:: getJug(){
 Casilla* Ficha:: getCas(){
 	return this-> cas;
 }
-void Ficha:: setCas(Casilla* cas1)(){
+void Ficha:: setCas(Casilla* cas1){
 	cas=cas1;
 }
 void Ficha:: setCaracter(char pCaracter){

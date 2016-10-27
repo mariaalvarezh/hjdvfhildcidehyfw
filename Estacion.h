@@ -1,11 +1,11 @@
 #ifndef ESTACION_H
 #define ESTACION_H
-#include "Propiedad.h"
+#include "TarjetaPropiedad.h"
 
-class Estacion:public Propiedad{
+class Estacion:public TarjetaPropiedad{
 private:
 public:
-	Estacion(Ficha* fich, TituloPropiedad* tit, string nom, int valHip);
+	Estacion(string nom, int valHip, int prec);
 	~Estacion();
 	int calculoCobro(int cantEst);
 };

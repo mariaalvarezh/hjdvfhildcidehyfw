@@ -2,11 +2,11 @@
 
 NodoPropiedad::NodoPropiedad(){
 }
-NodoPropiedad::NodoPropiedad(	TituloPropiedad *ptrTarj, NodoPropiedad *sig=NULL){
+NodoPropiedad::NodoPropiedad(	TarjetaPropiedad *ptrTarj, NodoPropiedad *sig=NULL){
 	this->dato = ptrTarj ;
-	this->sigNodoPropiedad = sig; 
+	this->sigNodo = sig; 
 }
-void NodoPropiedad:: setDato(TituloPropiedad *m){
+void NodoPropiedad:: setDato(TarjetaPropiedad *m){
 	this->dato = m; 
 }
 void NodoPropiedad::setSigNodo( NodoPropiedad *sig){
@@ -15,7 +15,7 @@ void NodoPropiedad::setSigNodo( NodoPropiedad *sig){
 NodoPropiedad * NodoPropiedad:: getSigNodo () {
 	return this-> sigNodo;
 }
-TituloPropiedad *NodoPropiedad:: getDato(){
+TarjetaPropiedad *NodoPropiedad:: getDato(){
 	return this->dato;
 }
 string NodoPropiedad::toString(){

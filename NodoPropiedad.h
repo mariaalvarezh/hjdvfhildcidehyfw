@@ -1,16 +1,18 @@
 #ifndef NODOPROPIEDAD_H
 #define NODOPROPIEDAD_H
-#include "TituloPropiedad.h"
+#include "TarjetaPropiedad.h"
+#include "Casilla.h"
 
+class TarjetaPropiedad;
 class NodoPropiedad {
 private:
-	TituloPropiedad * dato;	NodoPropiedad *sigNodo;
+	TarjetaPropiedad * dato;	NodoPropiedad *sigNodo;
 public:
 	NodoPropiedad();
-	NodoPropiedad(TituloPropiedad*, NodoPropiedad*);
-	void setDato(TituloPropiedad *m);
+	NodoPropiedad(TarjetaPropiedad*, NodoPropiedad*);
+	void setDato(TarjetaPropiedad *m);
 	void setSigNodo( NodoPropiedad *sig) ;
-	NodoPropiedad * getSigNodo();	TituloPropiedad * getDato();	string toString();
+	NodoPropiedad * getSigNodo();	TarjetaPropiedad * getDato();	string toString();
 	~NodoPropiedad();
 };
 

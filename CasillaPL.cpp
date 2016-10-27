@@ -1,6 +1,6 @@
 #include "CasillaPL.h"
 
-CasillaPL::CasillaPL(string nom) {
+CasillaPL::CasillaPL(string nom):Casilla() {
 	this->nombre = nom;
 }
 

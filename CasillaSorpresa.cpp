@@ -1,6 +1,6 @@
 #include "CasillaSorpresa.h"
 
-CasillaSorpresa::CasillaSorpresa(char identificador) {
+CasillaSorpresa::CasillaSorpresa(char identificador):Casilla() {
 	this->identificador = identificador;
 }
 

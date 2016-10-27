@@ -1,6 +1,6 @@
 #include "CasillaImpuesto.h"
 
-CasillaImpuesto::CasillaImpuesto(float monto) {
+CasillaImpuesto::CasillaImpuesto(float monto):Casilla() {
 	this->monto = monto;
 }
 

@@ -8,12 +8,13 @@
 #include "Ficha.h"
 using namespace std;
 
+class Ficha;
 class Casilla {
 private:
 protected:
 	Ficha * fich;
 public:
-	Casilla(Ficha*fich);
+//	Casilla(Ficha*fich); siento que no sera necesario este constructor
 	Casilla( );
 	~Casilla( );
 	Ficha * getFicha( );

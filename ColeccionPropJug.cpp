@@ -3,7 +3,7 @@
 ColeccionPropJug::ColeccionPropJug() {
 	primero= NULL;
 }
-void ColeccionPropJug:: Insertar(TituloPropiedad * ptrTarjeta){
+void ColeccionPropJug:: Insertar(TarjetaPropiedad * ptrTarjeta){
 	NodoPropiedad* actual= primero;
 	actual = primero; 
 	if (primero==NULL ||
@@ -29,7 +29,7 @@ string ColeccionPropJug :: toString(){
 	}
 	return s.str();
 }
-void ColeccionPropJug:: Eliminar(TituloPropiedad * ptrTarjeta){
+/*void ColeccionPropJug:: Eliminar(n){
 	NodoPropiedad*actual=primero;
 	while(actual->getSigNodo()->getDato( )->getCasillaProp()->getNombre()==ptrTarjeta->getCasillaProp()->getNombre()){
 		NodoPropiedad*aux=actual->getSigNodo();
@@ -45,7 +45,7 @@ void ColeccionPropJug:: Eliminar(TituloPropiedad * ptrTarjeta){
 		}
 	}
 	
-
+*/
 ColeccionPropJug::~ColeccionPropJug(){
 	while (primero != NULL ) {
 		NodoPropiedad*actual = primero;

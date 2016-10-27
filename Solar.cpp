@@ -1,6 +1,6 @@
 #include "Solar.h"
 
-Solar::Solar(Ficha* fich, TituloPropiedad* tit, string nom, int valHip, int grup, int cobBas, int cob1, int cob2, int cob3, int cob4, int cobHot, int cosCas, int cosHot):Propiedad(fich, tit, nom, valHip, grup) {
+Solar::Solar(string nom, int valHip, int prec, int grup, int cobBas, int cob1, int cob2, int cob3, int cob4, int cobHot, int cosCas, int cosHot):TarjetaPropiedad(nom, valHip, prec, grup) {
 	this->cantCasasHotel=0;
 	this->cobroBase=cobBas;
 	this->cobro1casa=cob1;

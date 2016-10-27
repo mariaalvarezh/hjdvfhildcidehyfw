@@ -1,7 +1,7 @@
 #include "Casilla.h"
 
-Casilla::Casilla(Ficha*fich) {
-	this->fich = fich;
+Casilla::Casilla() {
+	this->fich = NULL;
 }
 Casilla::~Casilla() {
 	delete fich;

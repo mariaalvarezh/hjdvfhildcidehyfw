@@ -1,6 +1,6 @@
 #include "CasillaGO.h"
 
-CasillaGO::CasillaGO(char ident,string nom) {
+CasillaGO::CasillaGO(char ident,string nom): Casilla() {
 	this->ident = ident;
 }
 string CasillaGO::getNombre( ){
