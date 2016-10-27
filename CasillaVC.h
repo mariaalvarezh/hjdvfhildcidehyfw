@@ -4,13 +4,14 @@
 
 class CasillaVC: public Casilla {
 private:
-	string nombre
+	string nombre;
 protected:
 public:
 	CasillaVC(string nombre);
 	string getNombre( );
 	float multa( );
 	~CasillaVC();
+	string toString( );
 };
 
 #endif

@@ -8,9 +8,9 @@ CasillaPL::~CasillaPL() {
 	
 }
 string CasillaPL::getNombre( ){
-	return nombre
+	return nombre;
 }
-string CasillaPl::toString( ){
+string CasillaPL::toString( ){
 	stringstream s;
 	s<<nombre<<endl;
 }

@@ -16,7 +16,7 @@ string CasillaCarcel::getNombre( ){
 }
 float CasillaCarcel::asignaMulta( ){
 	float multa=0;
-	srand(time(NULL))
+	srand(time(NULL));
 		multa = rand( )%20+300;
 	return multa;
 }

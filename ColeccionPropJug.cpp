@@ -19,7 +19,7 @@ void ColeccionPropJug:: Insertar(TituloPropiedad * ptrTarjeta){
 		actual->setSigNodo ( new NodoPropiedad( ptrTarjeta, actual->getSigNodo()));
 	}
 }
-}
+
 string ColeccionPropJug :: toString(){
 	stringstream s;
 	NodoPropiedad* actual= primero;
@@ -30,23 +30,22 @@ string ColeccionPropJug :: toString(){
 	return s.str();
 }
 void ColeccionPropJug:: Eliminar(TituloPropiedad * ptrTarjeta){
-	NodoPropiedad*actual=primero
-	while(actual->getSigNodo()->getDato->getCasillaProp()->getNombre()==ptrTarjeta->getCasillaProp()->getNombre()){
+	NodoPropiedad*actual=primero;
+	while(actual->getSigNodo()->getDato( )->getCasillaProp()->getNombre()==ptrTarjeta->getCasillaProp()->getNombre()){
 		NodoPropiedad*aux=actual->getSigNodo();
 		actual->setSigNodo(aux->getSigNodo());
-			delete aux;
 	}
-	else
+		delete aux;
 		actual=actual->getSigNodo();
-}
-if(*primero->getDato->getCasillaProp()->getNombre()==ptrTarjeta->getCasillaProp()->getNombre()){
-	NodoPropiedad*aux=primero;
-	primero=primero->getSigNodo();
-	delete aux;
+		if(*primero->getDato( )->getCasillaProp()->getNombre()==ptrTarjeta->getCasillaProp()->getNombre()){
+			NodoPropiedad*aux=primero;
+			primero=primero->getSigNodo();
+			delete aux;
+			
+		}
+	}
 	
-}
-	
-}
+
 ColeccionPropJug::~ColeccionPropJug(){
 	while (primero != NULL ) {
 		NodoPropiedad*actual = primero;

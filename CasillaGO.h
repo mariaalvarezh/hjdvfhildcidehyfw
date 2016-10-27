@@ -10,6 +10,7 @@ public:
 	CasillaGO(char ident,string nom);
 	~CasillaGO();
 	string getNombre( );
+	string toString( );
 	//void bonificacion( );
 };
 

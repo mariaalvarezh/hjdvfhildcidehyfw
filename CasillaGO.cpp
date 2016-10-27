@@ -3,7 +3,7 @@
 CasillaGO::CasillaGO(char ident,string nom) {
 	this->ident = ident;
 }
-string CasillaGo::getNombre( ){
+string CasillaGO::getNombre( ){
 	return nombre;
 }
 

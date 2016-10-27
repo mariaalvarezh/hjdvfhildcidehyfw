@@ -6,7 +6,7 @@ class CasillaCarcel {
 private:
 	string nombre;
 	char identificador;
-protected:
+
 public:
 	CasillaCarcel(char ident,string nom);
 	~CasillaCarcel( );

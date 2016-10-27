@@ -19,7 +19,7 @@ void ColeccionSorpresa::insertaPrimero(TarjetaSorpresa*dato){
 void ColeccionSorpresa::acomodar( ){
 	actual = primero;
 	Nodo* auxPrimero = primero->getSgtNodo( );
-	while(actual->getSgtNodo( ) ! = NULL )
+	while(actual->getSgtNodo( ) != NULL )
 		actual = actual->getSgtNodo( );       
 	actual->setSgtNodo(primero);
 	primero->setSgtNodo(NULL);
@@ -32,5 +32,5 @@ string ColeccionSorpresa:: toString( ){
 		s<<actual->getDato( )->toString( )<<endl;
 		actual = actual->getSgtNodo( );
 	}
-	return s.str( ),
+	return s.str( );
 }

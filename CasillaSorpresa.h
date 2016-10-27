@@ -5,7 +5,7 @@
 
 class CasillaSorpresa : public Casilla {
 private:
-	char identificador
+	char identificador;
 
 public:
 	CasillaSorpresa(char identificador);

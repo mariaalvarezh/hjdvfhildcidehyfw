@@ -5,7 +5,6 @@
 #include <string>
 #include <ctime>
 #include <cstdlib>
-#include <fstream>
 #include "Ficha.h"
 using namespace std;
 

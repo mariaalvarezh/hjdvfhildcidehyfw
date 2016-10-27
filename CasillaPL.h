@@ -10,6 +10,7 @@ public:
 	CasillaPL(string nom);
 	~CasillaPL();
 	string toString( );
+	string getNombre( );
 };
 
 #endif
