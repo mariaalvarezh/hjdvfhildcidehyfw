@@ -25,5 +25,5 @@ string NodoPropiedad::toString(){
 }
 
 NodoPropiedad::~NodoPropiedad(){
-	delete this->dato; 
+	//los datos se borraran al destruir la coleccion de tableros
 }
