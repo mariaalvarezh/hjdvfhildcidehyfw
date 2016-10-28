@@ -1,11 +1,12 @@
 #ifndef JUGADOR_H
 #define JUGADOR_H
 #include "Dado.h"
+#include "Casilla.h"
 #include "TarjetaPropiedad.h"
 #include "ColeccionPropJug.h"
-#include "Casilla.h"
+#include "Solar.h"
 using namespace std;
-
+class Solar;
 class TarjetaPropiedad;
 class ColeccionPropJug;
 class Jugador {
@@ -25,9 +26,9 @@ public:
 	int LanzarDado(Dado *m);
 	void ComprarSolar(TarjetaPropiedad  *m1);
 	void Pagar();
-	void ComprarCasas(TarjetaPropiedad *m1);
+	void ComprarCasasHoteles(Solar *m1);
 	void Hipotecar(TarjetaPropiedad* titul);
-	void VenderPropiedades(TarjetaPropiedad *m1);
+	void VenderPropiedades(TarjetaPropiedad *m1, ColeccionPropJug *Colecc1, int pos);
 	void Deshipotecar(TarjetaPropiedad* titul);
 	string toString();
 	~Jugador();

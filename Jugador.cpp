@@ -25,20 +25,32 @@ void Jugador::ComprarSolar(TarjetaPropiedad *m1){
 	tarjetas->Insertar(m1);
 	capital=capital-costo;
 }
-void Jugador:: ComprarCasas(TarjetaPropiedad *m1){
-	int costo=m1->getPrecio();;
+void Jugador:: ComprarCasasHoteles(Solar *m1){
+	float costo;
+	if(m1->cantCasasHotel()==4){
+		costo=m1->getCostoxHotel();
+		m1->setCantCasasHotel(cantCasasHotel++);
+		capital= capital-costo1;	
+	}
+	else
+	costo=m1->getCostoXCasa();
+	m1->setCantCasasHotel(cantCasasHotel++);
+	capital= capital-costo;	
 }
-void Jugador:: VenderPropiedades(TarjetaPropiedad *m1){
+void Jugador:: VenderPropiedades(TarjetaPropiedad *m1, ColeccionPropJug *Colecc1, int pos){
 	float costo=(m1->getPrecio())-(m1->getPrecio()*0.25);
 	capital= capital+costo;
+	Colecc1->removerPos(pos);
 }
 void Jugador::Hipotecar(TarjetaPropiedad* titul){
-	float total= titul->getValHip();
-	capital= capital+total;
+	float hipoteca= titul->getValHip();
+	capital= capital+hipoteca;
+	titul->setHipoteca(true);
 }
 void Jugador::Deshipotecar(TarjetaPropiedad* titul){
 	float total=(titul->getValHip())+(titul->getValHip()*0.20);
 	capital=capital-total;
+	titul->setHipoteca(false);
 }
 string Jugador::toString(){
 	stringstream s;

@@ -1,7 +1,7 @@
 #ifndef NODOPROPIEDAD_H
 #define NODOPROPIEDAD_H
-#include "TarjetaPropiedad.h"
 #include "Casilla.h"
+#include "TarjetaPropiedad.h"
 
 class TarjetaPropiedad;
 class NodoPropiedad {

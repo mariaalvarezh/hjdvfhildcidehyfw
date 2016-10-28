@@ -49,3 +49,12 @@ int Solar :: calculoCobro(){
 	}
 	return monto;
 }
+void Solar::setCantCasasHotel(int pCantCasasHoteles){
+	this->cantCasasHotel=pCantCasasHoteles;
+}
+int Solar:: getCostoXCasa(){
+	return this->costoXCasa;
+}
+int Solar:: getCostoxHotel(){
+	return this->costoXHotel;
+}

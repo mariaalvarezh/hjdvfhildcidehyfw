@@ -12,7 +12,7 @@ private:
 public:
 	ColeccionPropJug() ;
 	string toString();
-	void Eliminar(int n);
+	void removerPos(int n);
 	void Insertar(TarjetaPropiedad * ptrTarjeta);
 	~ColeccionPropJug();
 	
