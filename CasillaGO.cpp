@@ -1,7 +1,8 @@
 #include "CasillaGO.h"
 
-CasillaGO::CasillaGO(char ident,string nom): Casilla() {
+CasillaGO::CasillaGO(Ficha* fich1, Ficha* fich2, char ident,string nom): Casilla(fich1, fich2) {
 	this->ident = ident;
+	this->nombre=nom;
 }
 string CasillaGO::getNombre( ){
 	return nombre;

@@ -7,7 +7,7 @@ private:
 	string nombre;
 	char ident;
 public:
-	CasillaGO(char ident,string nom);
+	CasillaGO(Ficha* fich1, Ficha* fich2, char ident,string nom);
 	~CasillaGO();
 	string getNombre( );
 	string toString( );
