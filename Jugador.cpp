@@ -26,7 +26,7 @@ void Jugador::ComprarSolar(TarjetaPropiedad *m1){
 	capital=capital-costo;
 }
 void Jugador:: ComprarCasas(TarjetaPropiedad *m1){
-	int costo=m1->getPrecio();;
+	int costo=m1->getPrecio();
 }
 void Jugador:: VenderPropiedades(TarjetaPropiedad *m1){
 	float costo=(m1->getPrecio())-(m1->getPrecio()*0.25);

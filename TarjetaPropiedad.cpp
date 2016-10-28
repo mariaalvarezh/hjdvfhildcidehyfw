@@ -46,5 +46,5 @@ TarjetaPropiedad::~TarjetaPropiedad() {
 }
 
 string TarjetaPropiedad :: toString(){
-	
+	return 0;
 }

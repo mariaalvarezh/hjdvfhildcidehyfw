@@ -1,6 +1,11 @@
 #ifndef DADO_H
 #define DADO_H
-
+#include <ctime>
+#include <cstdlib>
+#include <iostream>
+#include <sstream>
+#include <string>
+using namespace std;
 class Dado {
 private:
 	int cara;

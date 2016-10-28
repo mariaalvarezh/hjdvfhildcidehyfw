@@ -13,6 +13,7 @@ string CasillaPL::getNombre( ){
 string CasillaPL::toString( ){
 	stringstream s;
 	s<<nombre<<endl;
+	return s.str( );
 }
 
 
