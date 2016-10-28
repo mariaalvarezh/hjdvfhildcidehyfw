@@ -10,15 +10,17 @@ using namespace std;
 
 class Ficha;
 class Casilla {
-private:
 protected:
-	Ficha * fich;
+	Ficha * fich1;
+	Ficha* fich2;
 public:
-//	Casilla(Ficha*fich); siento que no sera necesario este constructor
+	Casilla(Ficha*fich, Ficha* fich2); //siento que no sera necesario este constructor o quizá para la casillaGO
 	Casilla( );
 	~Casilla( );
-	Ficha * getFicha( );
-	void setFicha(Ficha * fich);
+	Ficha * getFicha1( );
+	Ficha * getFicha2( );
+	void setFicha1(Ficha * fich);
+	void setFicha2(Ficha * fich);
 	
 };
 
